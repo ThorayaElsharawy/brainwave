@@ -9,7 +9,7 @@ export default function Button({ children, className = '', href, onClick, px = '
     const spanClasses = 'relative z-10'
     const renderButton = () => {
         return (
-            <button className={classes}>
+            <button className={classes} onClick={onClick}>
                 <span className={spanClasses}>{children}</span>
                 {ButtonSvg(white)}
             </button>
@@ -18,7 +18,7 @@ export default function Button({ children, className = '', href, onClick, px = '
 
     const renderLink = () => {
         return (
-            <a href={href} className={classes}>
+            <a href={href} className={classes} onClick={onClick}>
                 <span className={spanClasses}>{children}</span>
                 {ButtonSvg(white)}
             </a>
