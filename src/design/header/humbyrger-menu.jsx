@@ -1,7 +1,7 @@
 import { BackgroundCircles } from "./background-circles";
 import { Rings } from "./rings";
 import { SideLines } from "./side-lines";
-import { background } from "../assets"
+import { background } from "../../assets"
 
 export const HamburgerMenu = () => {
     return (
