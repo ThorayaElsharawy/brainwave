@@ -11,7 +11,9 @@ export default function Section({
 }) {
     return (
         <div id={id} className={`relative ${customPadding} ${crosses} ${className}`}>
+            
             {children}
+
             <div className='hidden absolute top-0 left-5 w-0.5 h-full bg-stroke-1 pointer-events-none 
             md:block lg:left-7 xl:left-10' />
 
