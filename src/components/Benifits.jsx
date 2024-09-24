@@ -10,6 +10,7 @@ import {
     benefitIcon4,
     benefitImage2
 } from "../assets"
+
 const BENIFITS = [
     {
         id: "0",
@@ -65,7 +66,7 @@ const BENIFITS = [
 
 export default function Benifits() {
     return (
-        <Section id=' '>
+        <Section id='features'>
             <div className='container relative z-2'>
                 <Heading className="md:mx-w-md lg:max-w-2xl" title="Chat Smarter, not Harder with Brainwave" />
                 <div className='flex flex-wrap gap-10 mb-10'>
