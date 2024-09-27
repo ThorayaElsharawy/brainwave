@@ -6,7 +6,6 @@ import MenuSvg from '../assets/svg/MenuSvg';
 import { HamburgerMenu } from '../design/header/humbyrger-menu';
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
-
 const NAVIGATION = [
     {
         id: "0",
@@ -57,9 +56,9 @@ export default function Header() {
     }
 
     const handleClick = () => {
-        // if(!toggleNavigation) return
+        if(!toggleNavigation) return
 
-        // enablePageScroll()
+        enablePageScroll()
         setToggleNavigation(false)
     }
 

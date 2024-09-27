@@ -66,7 +66,7 @@ const BENIFITS = [
 
 export default function Benifits() {
     return (
-        <Section id='features'>
+        <Section id='features' crosses={false}>
             <div className='container relative z-2'>
                 <Heading className="md:mx-w-md lg:max-w-2xl" title="Chat Smarter, not Harder with Brainwave" />
                 <div className='flex flex-wrap gap-10 mb-10'>
