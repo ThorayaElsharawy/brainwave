@@ -6,6 +6,7 @@ import MenuSvg from '../assets/svg/MenuSvg';
 import { HamburgerMenu } from '../design/header/humbyrger-menu';
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
+
 const NAVIGATION = [
     {
         id: "0",
@@ -71,7 +72,7 @@ export default function Header() {
                 </a>
 
                 <nav className={`${toggleNavigation ? 'flex' : 'hidden'} fixed left-0 right-0 bottom-0 top-[5rem] lg:static lg:flex lg:mx-auto lg:bg-transparent`}>
-                    <div className='relative flex flex-col items-center justify-center m-auto lg:flex-row'>
+                    <div className='relative flex flex-col items-center justify-center m-auto lg:flex-row bg-n-8 w-full h-full'>
                         {NAVIGATION.map(item => (
                             <a href={item.url} key={item.id} onClick={handleClick}
                                 className={`block relative text-2xl uppercase px-6 py-6 md:py-8 lg:-m-0.5 lg:text-sm lg:font-semibold 
@@ -90,7 +91,7 @@ export default function Header() {
                     new account
                 </a>
                 <Button className='hidden lg:flex' href='#login'>sign in</Button>
-                <Button className='ml-auto lg:hidden relative' px='px-3' onClick={() => setToggleNavigation((prev) => !prev)}>
+                <Button className='ml-auto lg:hidden relative' px='px-3' onClick={handleToggleNavigation}>
                     <MenuSvg openNavigation={toggleNavigation} />
                 </Button>
             </div>
